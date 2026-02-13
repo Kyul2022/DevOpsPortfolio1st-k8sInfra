@@ -7,7 +7,7 @@ spec:
   project: default
 
   source:
-    repoURL: https://gitlab.com/nanuchi/argocd-app-config.git
+    repoURL: https://github.com/Kyul2022/DevOpsPortfolio1st-k8sInfra.git
     targetRevision: HEAD
     path: dev
   destination: 

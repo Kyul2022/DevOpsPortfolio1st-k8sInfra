@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: backend
-  namespace: k3s2on10
+  namespace: argocd
   labels:
     app: backend
 spec:
@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
       - name: backend
-        image: kyul1234/k3s2on10:latest
+        image: kyul1234/argocd:latest
         imagePullPolicy: Always
         env:
         - name: DB_HOST
@@ -52,7 +52,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: backend-service
-  namespace: k3s2on10
+  namespace: argocd
 spec:
   type: ClusterIP
   selector:
