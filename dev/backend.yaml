@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
       - name: backend
-        image: kyul1234/devops-portfolio:kyul1234/devops-portfolio:main
+        image: {{ steps.meta.outputs.tags }}
         imagePullPolicy: Always
         env:
         - name: DB_HOST
