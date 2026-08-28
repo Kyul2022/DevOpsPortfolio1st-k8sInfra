@@ -13,8 +13,8 @@ syncPolicy:
   syncOptions:
     - CreateNamespace=true
   automated:
-    selfHeal: true   # reverts any manual drift on the cluster
-    prune: true       # removes resources that were deleted from the repo
+    selfHeal: true  
+    prune: true    
 ```
 
 The application's target namespace is `myapp`, while the ArgoCD resources themselves live in the `argocd` namespace.
